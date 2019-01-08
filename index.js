@@ -17,6 +17,20 @@ for(let i= 0; i < arr.length; i++){
 
 console.log("Filter results:", newArr);
 
+// Answer
+
+var filtered = car => {
+  return car.name === 'ford';
+};
+const arr = [
+  { name: 'chevy', count: 2 },
+  { name: 'ford', count: 5 },
+  { name: 'acura', count: 3 },
+  { name: 'honda', count: 16 }
+].filter(filtered);
+
+console.log(arr);
+
 _______________________________________________________________________________
 
 // 2. Given the function, use the ES6 we covered to combine the two arrays.
@@ -32,3 +46,12 @@ for(let i = 0; i < newArray.length; i++) {
 }
 
 addNewStudent(arr, newStudents);
+
+// Answer
+
+const arr = ['Bill', 'Joe', 'Emily', 'Andrea'];
+const newStudents = ['Andrew', 'Tasha', 'Carol', 'George'];
+
+const fullArray = [...arr, ...newStudents];
+
+console.log(fullArray);
